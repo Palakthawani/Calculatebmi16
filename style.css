@@ -1,0 +1,266 @@
+*{
+ margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+    background-color: blanchedalmond;
+    color: brown;
+    text-decoration: double;
+    text-align: justify;
+    text-decoration-color: black;
+    text-shadow: 30px;
+    font-size: 25px;
+    padding: auto;
+    border: 15px solid rgb(61, 5, 5);
+    
+
+}
+.wrapper{
+    padding: 50px 100px;
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height :100vh;
+    background-size: auto;
+background-position: left;
+}
+.bmi-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 100px;
+}
+
+.bmi-image{
+    width: 150px;
+    height: auto;
+}
+
+.bmi-caption{
+    margin-top: 10px;
+    font-size: 20px;
+    color: maroon;
+    text-align: left;
+}
+
+
+.home{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.BMI{
+    width :100px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    color: black;
+}
+nav ul li a{
+    color: black;
+    text-decoration :none;
+    font-size: 30px;
+    position:relative;
+}
+nav ul li a::after{
+content: '';
+width: 0;
+height: 4px;
+background :brown;
+position:absolute;
+left:0;
+bottom: -6px;
+transition:1s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    
+    font-size: 15px;
+}
+.header-text h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+   color: darkblue;
+}
+.header-text h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+   color:sienna;
+}
+
+#CALCULATOR{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 200;
+    flex-direction: column;
+    padding: 240px;
+
+}
+
+.container {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    background-color: #db74a8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #296f7d;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+#DIET{
+    padding: 250px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center
+}
+.diet{
+padding: auto;
+text-align: center;
+font-size: 20px;
+}
+.diet h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration :none;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+nav ul li a::after{
+content: '';
+width: 0;
+height: 4px;
+background :brown;
+position:absolute;
+left:0;
+bottom: -6px;
+transition:1s;
+text-align: center;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+#Underweight{
+    padding: 150px 150px 150px 150px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(141, 36, 83, 0.912);
+}
+
+#Normal{
+    padding: 150px 150px 150px 150px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(141, 36, 83, 0.912);
+}
+
+#Overweight{
+
+ padding: 150px 150px 150px 150px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(141, 36, 83, 0.912);
+}
+
+#Obese{
+    padding: 150px 150px 150px 150px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(141, 36, 83, 0.912);
+}
+#Highlights{
+    padding: 150px 150px 150px 150px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.4);
+    margin-top: 10px;
+    color: black;
+}
+@media(max-width :768px){
+    body{
+        padding: 10px;
+    }
+   .bmi-section{
+    align-items: center;
+    margin: 20px;
+   }
+   .bmi-caption{
+    text-align: center;
+   }
+
+    .wrapper{
+        padding: 20px;
+    }
+    #CALCULATOR{
+        padding: 40px 10px;
+    }
+}
